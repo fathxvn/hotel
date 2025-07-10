@@ -1,0 +1,15 @@
+.sidebar .nav-link {
+    border-radius: 8px;
+    padding: 8px 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #f0f4ff;
+    color: #4c6fff;
+}
+
+.sidebar .nav-link.active {
+    background-color: #e4edff;
+    color: #4c6fff;
+}
