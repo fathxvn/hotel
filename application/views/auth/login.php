@@ -19,6 +19,13 @@
             justify-content: center;
         }
 
+        .logo-gif {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
         .login-card {
             max-width: 400px;
             width: 100%;
@@ -53,7 +60,7 @@
 <body>
 
 <div class="login-card text-center">
-    <link rel="icon" type="image/gif" href="<?= base_url('assets/img/favicon.gif') ?>">
+     <img src="<?= base_url('assets/img/hotel-sign.gif') ?>" alt="Hotel Logo" class="logo-gif">
     <h4 class="mb-3">Login Aplikasi Hotel</h4>
 
     <?php if ($this->session->flashdata('error')): ?>

@@ -56,7 +56,7 @@
 <nav class="sidebar p-3 d-flex flex-column" id="sidebar">
     <div class="d-flex align-items-center justify-content-between mb-4">
         <div class="d-flex align-items-center gap-2">
-            <img src="https://cdn-icons-png.flaticon.com/512/270/270014.png" alt="Logo" width="30" height="30">
+            <img src="<?= base_url('assets/img/hotel.gif') ?>" alt="Logo" width="30" height="30">
             <span class="fw-bold fs-5 sidebar-title">Hotel</span>
         </div>
         <button class="btn btn-sm btn-light d-md-inline d-none" onclick="toggleSidebar()" title="Toggle Sidebar">
