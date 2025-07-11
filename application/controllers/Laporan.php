@@ -7,6 +7,10 @@ class Laporan extends CI_Controller {
         if (!$this->session->userdata('is_login')) {
             redirect('auth');
         }
+
+        if (!in_array($this->session->userdata('level'), ['admin', 'manager'])) {
+            show_404();
+        }
         $this->load->model('M_laporan');
     }
 
