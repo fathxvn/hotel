@@ -73,7 +73,7 @@
         </li>
 
         <!-- menu hanya untuk admin dan manager -->
-         <?php if($level == 'Admin' || $level == 'Manager'): ?>
+         <?php if($level == 'Admin' || $level == 'Manager' || $level == 'Resepsionis'): ?>
         <li class="nav-item">
             <a class="nav-link d-flex align-items-center gap-2" href="<?= site_url('kamar') ?>">
                 <i class="bi bi-building-fill-check"></i><span class="link-text">Kamar</span>
