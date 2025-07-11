@@ -30,6 +30,7 @@ class Tamu extends CI_Controller {
             'jenis_kelamin' => $this->input->post('jenis_kelamin')
         ];
         $this->M_tamu->insert($data);
+        $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
         redirect('tamu');
     }
 
@@ -49,6 +50,7 @@ class Tamu extends CI_Controller {
             'jenis_kelamin' => $this->input->post('jenis_kelamin')
         ];
         $this->M_tamu->update($id, $data);
+        $this->session->set_flashdata('success', 'Data berhasil diperbarui');
         redirect('tamu');
     }
 

@@ -31,6 +31,7 @@ class Karyawan extends CI_Controller {
             'status' => $this->input->post('status')
         ];
         $this->M_karyawan->insert($data);
+        $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
         redirect('karyawan');
     }
 
@@ -50,6 +51,8 @@ class Karyawan extends CI_Controller {
             'status' => $this->input->post('status')
         ];
         $this->M_karyawan->update($id, $data);
+        $this->session->set_flashdata('success', 'Data berhasil diperbarui');
+
         redirect('karyawan');
     }
 

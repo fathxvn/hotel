@@ -48,6 +48,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     if ($data['status_pembayaran'] === 'Berhasil') {
         $this->M_reservasi->update($id_reservasi, ['status_pembayaran' => 'Sudah Bayar']);
     }
+    $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
 
     redirect('pembayaran');
 }

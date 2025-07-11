@@ -103,7 +103,7 @@
             <a href="<?= site_url('kamar/edit/' . $k->id_kamar) ?>" class="btn btn-sm btn-warning">
               <i class="bi bi-pencil"></i>
             </a>
-            <a href="<?= site_url('kamar/hapus/' . $k->id_kamar) ?>" class="btn btn-sm btn-danger" onclick="return confirm('Hapus Data ini?')">
+            <a href="<?= site_url('kamar/hapus/' . $k->id_kamar) ?>" class="btn btn-sm btn-danger tombol-hapus">
               <i class="bi bi-trash"></i>
             </a>
           </td>

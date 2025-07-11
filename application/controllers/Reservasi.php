@@ -59,6 +59,7 @@ class Reservasi extends CI_Controller {
     ];
 
     $this->M_reservasi->insert($data);
+    $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
     redirect('reservasi');
 }
 
@@ -72,6 +73,7 @@ class Reservasi extends CI_Controller {
         'status_reservasi' => $this->input->post('status_reservasi')
      ];
      $this->M_reservasi->update($id, $data);
+     $this->session->set_flashdata('success', 'Data berhasil diperbarui');
         redirect('reservasi');
 }
 

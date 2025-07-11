@@ -96,7 +96,7 @@
             <a href="<?= site_url('karyawan/edit/' . $k->id_karyawan) ?>" class="btn btn-sm btn-warning">
               <i class="bi bi-pencil"></i>
             </a>
-            <a href="<?= site_url('karyawan/hapus/' . $k->id_karyawan) ?>" class="btn btn-sm btn-danger" onclick="return confirm('Hapus data ini?')">
+            <a href="<?= site_url('karyawan/hapus/' . $k->id_karyawan) ?>" class="btn btn-sm btn-danger tombol-hapus">
               <i class="bi bi-trash"></i>
             </a>
           </td>

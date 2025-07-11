@@ -88,7 +88,7 @@
             <span class="badge bg-info text-dark">Rp <?= number_format($p->harga * $p->jumlah, 0, ',', '.') ?></span>
           </td>
           <td>
-            <a href="<?= site_url('pesanan_layanan/hapus/'.$p->id_pesanan) ?>" class="btn btn-sm btn-danger" onclick="return confirm('Hapus pesanan ini?')">
+            <a href="<?= site_url('pesanan_layanan/hapus/'.$p->id_pesanan) ?>" class="btn btn-sm btn-danger tombol-hapus">
               <i class="bi bi-trash"></i>
             </a>
           </td>

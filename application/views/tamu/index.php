@@ -92,7 +92,7 @@
             <a href="<?= site_url('tamu/edit/' . $t->id_tamu) ?>" class="btn btn-sm btn-warning">
               <i class="bi bi-pencil"></i>
             </a>
-            <a href="<?= site_url('tamu/hapus/' . $t->id_tamu) ?>" class="btn btn-sm btn-danger" onclick="return confirm('Hapus tamu ini?')">
+            <a href="<?= site_url('tamu/hapus/' . $t->id_tamu) ?>" class="btn btn-sm btn-danger tombol-hapus">
               <i class="bi bi-trash"></i>
             </a>
           </td>

@@ -120,7 +120,7 @@
             <a href="<?= site_url('reservasi/edit/' . $r->id_reservasi) ?>" class="btn btn-sm btn-primary">
               <i class="bi bi-pencil"></i>
             </a>
-            <a href="<?= site_url('reservasi/hapus/' . $r->id_reservasi) ?>" class="btn btn-sm btn-danger" onclick="return confirm('Hapus reservasi?')">
+            <a href="<?= site_url('reservasi/hapus/' . $r->id_reservasi) ?>" class="btn btn-sm btn-danger tombol-hapus">
               <i class="bi bi-trash"></i>
             </a>
           </td>

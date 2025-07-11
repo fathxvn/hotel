@@ -100,7 +100,7 @@
           </td>
           <td class="text-truncate"><?= $p->keterangan ?></td>
           <td>
-            <a href="<?= site_url('pembayaran/hapus/' . $p->id_pembayaran) ?>" class="btn btn-sm btn-danger" onclick="return confirm('Hapus pembayaran ini?')">
+            <a href="<?= site_url('pembayaran/hapus/' . $p->id_pembayaran) ?>" class="btn btn-sm btn-danger tombol-hapus">
               <i class="bi bi-trash"></i>
             </a>
           </td>

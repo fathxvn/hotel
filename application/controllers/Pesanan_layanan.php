@@ -32,6 +32,8 @@ class Pesanan_layanan extends CI_Controller {
             'tanggal_pesanan' => date('Y-m-d H:i:s')
         ];
         $this->M_pesanan_layanan->insert($data);
+        $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
+
         redirect('pesanan_layanan');
     }
 

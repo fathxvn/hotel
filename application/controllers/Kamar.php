@@ -32,6 +32,7 @@ class Kamar extends CI_Controller {
             'deskripsi' => $this->input->post('deskripsi')
         ];
         $this->M_kamar->insert($data);
+        $this->session->set_flashdata('success', 'Data berhasil ditambahkan!');
         redirect('kamar');
     }
 
@@ -51,6 +52,7 @@ class Kamar extends CI_Controller {
             'deskripsi' => $this->input->post('deskripsi')
         ];
         $this->M_kamar->update($id, $data);
+        $this->session->set_flashdata('success', 'Data berhasil diperbarui!');
         redirect('kamar');
     }
 

@@ -37,6 +37,8 @@ class Layanan extends CI_Controller {
         ];
 
         $this->M_layanan->insert($data);
+        $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
+
         redirect('layanan');
     }
 
@@ -53,6 +55,7 @@ class Layanan extends CI_Controller {
             'status' => $this->input->post('status')
         ];
         $this->M_layanan->update($id, $data);
+        $this->session->set_flashdata('success', 'Data berhasil diperbarui');
         redirect('layanan');
     }
 
